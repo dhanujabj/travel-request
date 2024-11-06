@@ -1,0 +1,173 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #2f3856a5;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Added position relative for absolute positioning of logout */
+}
+
+.header h1 {
+    margin: 0;
+}
+
+#logout-button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #4f2f92;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute; /* Absolute positioning */
+    right: 20px; /* Position it 20px from the right */
+    top: 50%; /* Vertically center it */
+    transform: translateY(-50%); /* Adjust for true vertical centering */
+}
+
+#logout-button:hover {
+    background-color: #e5e5e5;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Form Container */
+.form-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Dropdown and Table Styles */
+.form-dropdown {
+    margin-bottom: 20px;
+}
+
+.form-dropdown label {
+    margin-right: 10px;
+}
+
+#form-select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 6px 12px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Legend Styling */
+.legend {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.legend-item span {
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.approved-color {
+    width: 20px;
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+}
+
+.on-hold-color {
+    width: 20px;
+    height: 20px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+}
+
+.rejected-color {
+    width: 20px;
+    height: 20px;
+    background-color: #ff4d4d;
+    border-radius: 50%;
+}
+/* Action Buttons */
+button.approve-btn, button.reject-btn, button.on-hold-btn {
+    padding: 6px 12px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    width: 90px;  /* Ensure buttons have a defined width */
+    border-radius: 4px;
+    text-align: center; /* Ensure the text is centered inside the button */
+    display: inline-block; /* Allow buttons to appear inline */
+}
+
+button.approve-btn {
+    background-color: #28a745;
+}
+
+button.approve-btn:hover {
+    background-color: #218838;
+}
+
+button.reject-btn {
+    background-color: #dc3545;
+}
+
+button.reject-btn:hover {
+    background-color: #c82333;
+}
+
+button.on-hold-btn {
+    background-color: #ffc107;
+}
+
+button.on-hold-btn:hover {
+    background-color: #e0a800;
+}

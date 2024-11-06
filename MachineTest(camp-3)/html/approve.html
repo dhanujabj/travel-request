@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Requestor</title>
+  <link rel="stylesheet" href="../css/approve.css"> </head>
+<body>
+  <header>
+    <h1>TRAVEL REQUESTS</h1>
+    <button class="logout-button" onclick="logout()">Logout</button>
+  </header>
+
+  <main>
+    <nav>
+      <ul>
+        <li><a href="#">Pending</a></li>
+        <li><a href="#">All</a></li>
+        <li><a href="#">Approved</a></li>
+        <li><a href="#">Rejected</a></li>
+        <li><a href="#">On Hold</a></li>
+      </ul>
+    </nav>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Employee Name</th>
+          <th>Destination</th>
+          <th>Priority</th>
+          <th>View Details</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Donald</td>
+          <td>Las Vegas</td>
+          <td>Critical</td>
+          <td><button class="view-more-button" onclick="window.location.href='../html/viewmore.html'">View More</button></td>
+          <td><select class="action-dropdown">
+            <option value="approve">Approve</option>
+            <option value="reject">Reject</option>
+            <option value="on-hold">On Hold</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td>Aswathy</td>
+          <td>Delhi</td>
+          <td>Normal</td>
+          <td><button class="view-more-button" onclick="window.location.href='../html/viewmore.html'">View More</button></td>
+          <td><select class="action-dropdown">
+            <option value="approve">Approve</option>
+            <option value="reject">Reject</option>
+            <option value="on-hold">On Hold</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td>Franco</td>
+          <td>Kochi</td>
+          <td>Normal</td>
+          <td><button class="view-more-button" onclick="window.location.href='../html/viewmore.html'">View More</button></td>
+          <td><select class="action-dropdown">
+            <option value="approve">Approve</option>
+            <option value="reject">Reject</option>
+            <option value="on-hold">On Hold</option>
+          </select></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <script src="../js/approve.js"></script>
+</body>
+</html>

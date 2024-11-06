@@ -1,0 +1,113 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  body {
+    background-image: url('../.jpg');
+    background-size: cover; /* Ensures the image covers the whole background without repeating */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed in place */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2f3856a5;
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  .logout-button {
+    background-color: #24296f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  .logout-button:hover {
+    background-color: #171e74;
+  }
+  
+  /* Main Navigation */
+  nav {
+    margin: 20px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #e9f5ec;
+  }
+  
+  nav a:hover {
+    background-color: #c6e6d0;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  thead {
+    background-color: #f4f4f4;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    font-weight: bold;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* View More Button */
+  .view-more-button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .view-more-button:hover {
+    background-color: #5848d1;
+  }
+  
+  /* Action Dr
+  

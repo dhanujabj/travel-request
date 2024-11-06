@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Requestor</title>
+    <link rel="stylesheet" href="../css/viewmore.css">
+</head>
+<body>
+    <div class="header">
+        <h1>TRAVEL REQUEST</h1>
+        <button>Log out</button>
+        <!-- <img src="../pics/usericon.png" alt="User Icon"> -->
+    </div>
+
+    <div class="form-container">
+        <div class="form-dropdown">
+            <label for="form-select">Filter by Priority</label>
+            <select id="form-select">
+                <option value="all">All</option>
+                <option value="critical">Critical</option>
+                <option value="normal">Normal</option>
+                <option value="rejected">Rejected</option>
+            </select>
+        </div>
+
+        <div class="travel-details">
+            <h2>Travel Details</h2>
+            <p>Emp Id: 512</p>
+            <p>Emp Name: Donald</p>
+            <p>Cause For Travel: Client Meeting for abc project.</p>
+            <p>Source: Trivandrum, In India</p>
+            <p>Destination: New Delhi, In India</p>
+            <p>From 22/10/2017 to 25/10/2017 for 3 days.</p>
+            <p>Requested mode of travel: Flight</p>
+        </div>
+    </div>
+
+    <div class="legend">
+        <div class="legend-item">
+            <div class="approved-color"></div>
+            <span>Approved</span>
+        </div>
+        <div class="legend-item">
+            <div class="on-hold-color"></div>
+            <span>On Hold</span>
+        </div>
+        <div class="legend-item">
+            <div class="rejected-color"></div>
+            <span>Rejected</span>
+        </div>
+    </div>
+
+    <script src="../js/viewmore.js"></script>
+</body>
+</html>

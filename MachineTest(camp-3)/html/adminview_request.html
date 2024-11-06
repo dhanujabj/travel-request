@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Requestor</title>
+    <link rel="stylesheet" href="../css/adminview.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Travel Request</h1>
+        <button id="logout-button">Log out</button>
+        <img src="person_icon.png" alt="User Icon" class="user-icon">
+    </div>
+
+    <div class="form-container">
+        <div class="form-dropdown">
+            <label for="form-select">Filter by Priority</label>
+            <select id="form-select">
+                <option value="all">All</option>
+                <option value="critical">Critical</option>
+                <option value="normal">Normal</option>
+                <option value="rejected">Rejected</option>
+            </select>
+        </div>
+
+        <table id="request-table">
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Destination</th>
+                    <th>Priority</th>
+                    <th>View Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be populated by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="legend">
+        <div class="legend-item">
+            <div class="approved-color"></div>
+            <span>Approved</span>
+        </div>
+        <div class="legend-item">
+            <div class="on-hold-color"></div>
+            <span>On Hold</span>
+        </div>
+        <div class="legend-item">
+            <div class="rejected-color"></div>
+            <span>Rejected</span>
+        </div>
+    </div>
+
+    <script src="../js/adminview_request.js"></script>
+</body>
+</html>
